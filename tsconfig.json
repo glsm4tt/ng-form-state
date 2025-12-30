@@ -7,6 +7,14 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
+    "paths": {
+      "@appstrophe/ng-form-state": [
+        "./dist/ng-form-state"
+      ],
+      "@appstrophe/ngxs-form-state": [
+        "./dist/ngxs-form-state"
+      ]
+    },
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "isolatedModules": true,
@@ -21,5 +29,19 @@
     "strictInputAccessModifiers": true,
     "strictTemplates": true
   },
-  "files": []
+  "files": [],
+  "references": [
+    {
+      "path": "./projects/ng-form-state/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ng-form-state/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngxs-form-state/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ngxs-form-state/tsconfig.spec.json"
+    }
+  ]
 }

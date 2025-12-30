@@ -6,5 +6,57 @@
   },
   "newProjectRoot": "projects",
   "projects": {
+    "ng-form-state": {
+      "projectType": "library",
+      "root": "projects/ng-form-state",
+      "sourceRoot": "projects/ng-form-state/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ng-form-state/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ng-form-state/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "tsConfig": "projects/ng-form-state/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "ngxs-form-state": {
+      "projectType": "library",
+      "root": "projects/ngxs-form-state",
+      "sourceRoot": "projects/ngxs-form-state/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngxs-form-state/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngxs-form-state/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "tsConfig": "projects/ngxs-form-state/tsconfig.spec.json"
+          }
+        }
+      }
+    }
   }
 }

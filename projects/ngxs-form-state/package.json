@@ -1,0 +1,22 @@
+{
+  "name": "@appstrophe/ngxs-form-state",
+  "version": "21.0.0",
+  "private": true,
+  "description": "Global state management for Angular forms using NGXS and Angular Signals",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glsm4tt/ng-form-state.git"
+  },
+  "homepage": "https://github.com/glsm4tt/ng-form-state/tree/main/projects/ngxs-form-state",
+  "peerDependencies": {
+    "@angular/common": "^21.0.0",
+    "@angular/core": "^21.0.0",
+    "@appstrophe/ng-form-state": "^21.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "author": "Appstrophe Authors",
+  "license": "MIT",
+  "sideEffects": false
+}
